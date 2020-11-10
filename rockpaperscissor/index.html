@@ -3,9 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Rock Paper Scissors</title>
+		<script src="https://kit.fontawesome.com/176b62e972.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<script src="index.js"></script>
+		<header>
+			<h2>A simple <i>rock, paper, scissors</i> game</h2>
+		</header>
+
+		<div id="main">
+			<div class="score-display">
+				<div>
+					<p>Player score</p>
+					<p class="player-score">0</p>
+				</div>
+				<div>
+					<p>Computer score</p>
+					<p class="computer-score">0</p>
+				</div>
+			</div>
+
+			<div class="display-outcome"></div>
+
+			<div class="player-choice">
+				<i class="far fa-hand-rock rock" onclick="gamePlay('rock', computerPlay())"></i>
+				<i class="far fa-hand-paper paper" onclick="gamePlay('paper', computerPlay())"></i>
+				<i
+					class="far fa-hand-scissors scissors"
+					onclick="gamePlay('scissors', computerPlay())"
+				></i>
+			</div>
+		</div>
+		<footer>FbW39 Tutoring projects</footer>
+
+		<!-- Javascript -->
+		<script src="js/main.js"></script>
 	</body>
 </html>
