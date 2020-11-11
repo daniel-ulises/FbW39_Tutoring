@@ -13,9 +13,11 @@
 		</header>
 
 		<div id="main">
+			<!-- This container will contain both score counters for player and computer -->
 			<div class="score-display">
 				<div>
 					<p>Player score</p>
+					<!-- We will manipulate this within our Javascript code, incrementing it each round. -->
 					<p class="player-score">0</p>
 				</div>
 				<div>
@@ -24,12 +26,15 @@
 				</div>
 			</div>
 
+			<!-- This will be the container where we will display a message each round, depending on if you win or lose. -->
 			<div class="display-outcome"></div>
 
 			<div class="player-choice">
-				<i class="far fa-hand-rock rock" onclick=""></i>
-				<i class="far fa-hand-paper paper" onclick=""></i>
-				<i class="far fa-hand-scissors scissors" onclick=""></i>
+				<!-- Here we will call the function of the game using the "onclick" property.
+					 We also have to pass the desired choice of what we want to play with. -->
+				<i class="far fa-hand-rock rock" onclick="switchPlay('rock')"></i>
+				<i class="far fa-hand-paper paper" onclick="switchPlay('paper')"></i>
+				<i class="far fa-hand-scissors scissors" onclick="switchPlay('scissors')"></i>
 			</div>
 		</div>
 		<footer>FbW39 Tutoring projects</footer>
