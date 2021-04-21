@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+}
+
+h1 {
+	margin: 0;
+	padding: 2rem;
+	color: #dadada;
+	background-color: #525252;
+	text-align: center;
+}
+
+.container {
+	padding: 3rem 1rem;
+	width: 40rem;
+	max-width: 90%;
+	margin: auto;
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+}
+
+.todo-form {
+	background-color: #525252;
+	padding: 2rem;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input {
+	width: 70%;
+	padding: 0.5rem;
+}
+
+button {
+	padding: 0.5rem 2rem;
+}
+
+.todo-list {
+	background-color: #525252;
+	color: #dadada;
+	padding: 1rem 0;
+}
+
+ul {
+	margin: 0;
+	padding: 1rem 2rem;
+	list-style: none;
+}
+
+li {
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	margin: 1rem 0;
+	border: 0.2rem solid #dadada;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li:hover {
+	background-color: #333;
+}
+
+.todo-delete svg {
+	height: 1.6rem;
+	cursor: pointer;
+}
+
+.todo-delete svg:hover {
+	fill: #c92323;
+}
+
+.todo-list,
+.todo-form {
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+button {
+}
